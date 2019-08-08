@@ -12,6 +12,20 @@ GoTTY is a simple command line tool that turns your CLI tools into web applicati
 
 ![Screenshot](https://raw.githubusercontent.com/yudai/gotty/master/screenshot.gif)
 
+相比[yudai/gotty](https://github.com/yudai/gotty) 增加`--url`参数
+
+## build
+
+amd64:
+```bash
+GOOS=linux GOARCH=amd64 go build -o dist/amd64/gotty
+```
+
+arm64:
+```
+GOOS=linux GOARCH=arm64 go build -o dist/arm64/gotty
+```
+
 # Installation
 
 Download the latest stable binary file from the [Releases](https://github.com/yudai/gotty/releases) page. Note that the release marked `Pre-release` is built for testing purpose, which can include unstable or breaking changes. Download a release marked [Latest release](https://github.com/yudai/gotty/releases/latest) for a stabale build.
